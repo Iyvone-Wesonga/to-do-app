@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+
+    <!--<input id="date-picker" type="date">
+    <input id="todo-title" type="text">
+    <span><button onclick="addTodo()">Add Task</button></span>-->
+        <!--adding a div, with id such that any data that is reflected by the 3d manouver updates the div, making manipulation easier
+                <div id="toditems"></div>-->
+
+    <div class="wrapper">
+        <div class="taskinput">
+            <i class="material-icons">menu</i>
+            <input id="task" type="text" placeholder="Add a new task">
+           
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span id="All">All</span>
+                <span id="Pending">Pending</span>
+                <span id="Completed"> Completed</span>
+                <button id="Clear-btn" class="clear"> Clear All</button>
+                
+            </div>
+        </div>
+            <ul id="taskbox" class="task-box"></ul>           
+    </div>          
+
+       
+    <script src="todolist.js"></script>
+</body>
+</html>
