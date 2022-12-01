@@ -1,0 +1,28 @@
+.taskinput{
+    width: 26rem;
+    height: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    margin: 2em;
+    margin-left: 6.5em;
+    position: relative;
+ i{
+    position: absolute;
+    top: 2em;
+    transform: translate(10px, -34px);
+    z-index: 3;
+    color: #999;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.4rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    position: absolute;
+    border:1px solid #999;
+}
+input:active{
+    border: 1px solid #999;
+}}

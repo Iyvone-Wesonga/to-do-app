@@ -1,0 +1,45 @@
+.task-box{
+    font-size: 1.3rem;
+    margin-left: -3.4rem;
+    position: relative;
+.task{
+    display: flex;
+    text-align: left;
+    box-shadow: 0px 2px 2px 0px rgba(230, 222, 222, 0.621);
+    border-radius: 10px;
+}
+ li .settings{
+    margin-right: 1.3rem;
+    }
+label{
+    display: flex;
+    margin: 20px;
+    text-align: left;
+}
+ label p.checked{
+    text-decoration: line-through;
+}
+label input{
+    margin-right: 20px;
+}}
+.settings .taskmenu{
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    padding: 0 5px 0 5px;
+    box-shadow: 0 0 6px rgba(203, 114, 114, 0.377);
+    transform: scale(0);
+    z-index: 2;
+    transform-origin: top right;
+    transition:transform 0.4s ease;
+    left: 80%;
+    top: 10px;
+}
+.settings:hover .taskmenu{transform: scale(1);} 
+.taskmenu li{
+margin-bottom: 0.5rem;
+margin-top: 0.5rem;
+cursor: pointer;
+}
+.taskmenu li:hover{background-color: #7a7a7a6b;}
+i{cursor: pointer;}

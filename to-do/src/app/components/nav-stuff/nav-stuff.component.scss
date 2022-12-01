@@ -1,0 +1,46 @@
+.controls{
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+.filters span{
+    margin-left: 20px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    position:relative;
+    cursor: pointer;
+}
+span::before{
+    max-width: 2.5rem;
+    width: 0%;
+    height: 3px;
+    border-radius: 20px;
+    content: '';
+    background: #d279ad;
+    position: absolute;
+    left:-0.5rem;
+    top: 14px;
+    transform: translateX(55%);
+    display: block;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+}
+span:hover::before{
+    width: 100%;
+}
+
+    button{
+    background: #d279ad;
+    border: none;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    }
+    button:hover{
+    background: black;
+    color: rgb(220, 57, 57);
+}}

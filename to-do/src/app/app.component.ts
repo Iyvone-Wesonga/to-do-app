@@ -1,3 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'To-do App';
+}
 
 
 /*function addTodo(task){
@@ -78,7 +88,7 @@ localStorage.removeItem('name')
 //note there is no add to list button, use if plus the keyup condition to append list
 //adding stuff to the local storage will be linked to the filters
 
-const taskInput= document.getElementById("task");
+/*const taskInput= document.getElementById("task");
 //const taskBox=document.getElementById("taskbox")
 
 //default occurrences of setting input data to the local storage, and parsing the same data to an object called todos, stringified in the application local storage
@@ -105,7 +115,7 @@ taskInput.addEventListener('keyup', e=>{
     }
 })
 
-function showTodo(){
+/*function showTodo(){
     let todos=JSON.parse(localStorage.getItem('todo-list'))//the variable todos contains the object todo list set in the local storage,the todos are fetched upon this declaration
      // bringing the list details so that the p is updated
        let li=""
